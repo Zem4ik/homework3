@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework3</string>
+    <string name="downloading_error">Image can\'t be downloaded</string>
+    <string name="image_is_downloading">Image is downloading</string>
+    <string name="IMAGE_DOWNLOADED">IMAGE_DOWNLOADED</string>
+    <string name="BITMAP_TAG">BITMAP_TAG</string>
+    <string name="URL_TAG">URL_TAG</string>
+    <string name="imageFile">image.jpg</string>
+</resources>
