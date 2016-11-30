@@ -6,4 +6,5 @@
     <string name="BITMAP_TAG">BITMAP_TAG</string>
     <string name="URL_TAG">URL_TAG</string>
     <string name="imageFile">image.jpg</string>
+    <string name="waiting">Waiting for action</string>
 </resources>

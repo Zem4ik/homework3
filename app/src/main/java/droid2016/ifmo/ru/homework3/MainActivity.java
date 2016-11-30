@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.status_text);
         image = new File(getFilesDir(), getString(R.string.imageFile));
 
-        textView.setText(R.string.image_is_downloading);
         updateScreen();
 
         actionReceiver = new ActionReceiver();
@@ -63,8 +62,9 @@ public class MainActivity extends AppCompatActivity {
             textView.setVisibility(View.VISIBLE);
             imageView.setVisibility(View.INVISIBLE);
         } else {
-            textView.setVisibility(View.INVISIBLE);
-            imageView.setVisibility(View.VISIBLE);
+            textView.setText(R.string.waiting);
+            textView.setVisibility(View.VISIBLE);
+            imageView.setVisibility(View.INVISIBLE);
         }
     }
 
