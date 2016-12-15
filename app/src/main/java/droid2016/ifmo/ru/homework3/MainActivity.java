@@ -48,19 +48,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateScreen() {
+        Log.d("MainActivity", "updateScreen");
         if (image.exists()) {
             try {
+                Log.d("MainActivity", "updateScreen image exists");
                 imageView.setImageBitmap(BitmapFactory.decodeFile(image.getAbsolutePath()));
                 error = false;
             } catch (Exception e) {
                 e.printStackTrace();
                 error = true;
             }
-        }
-        if (error) {
-            textView.setText(R.string.downloading_error);
-            textView.setVisibility(View.VISIBLE);
-            imageView.setVisibility(View.INVISIBLE);
+            if (error) {
+                textView.setText(R.string.downloading_error);
+                textView.setVisibility(View.VISIBLE);
+                imageView.setVisibility(View.INVISIBLE);
+            } else {
+                textView.setVisibility(View.INVISIBLE);
+                imageView.setVisibility(View.VISIBLE);
+            }
         } else {
             textView.setText(R.string.waiting);
             textView.setVisibility(View.VISIBLE);

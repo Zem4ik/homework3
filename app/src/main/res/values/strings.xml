@@ -5,6 +5,6 @@
     <string name="IMAGE_DOWNLOADED">IMAGE_DOWNLOADED</string>
     <string name="BITMAP_TAG">BITMAP_TAG</string>
     <string name="URL_TAG">URL_TAG</string>
-    <string name="imageFile">image.jpg</string>
+    <string name="imageFile">image.png</string>
     <string name="waiting">Waiting for action</string>
 </resources>
